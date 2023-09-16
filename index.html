@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit</title>
+    <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
+    <!-- custom color  maker  -->
+    <!doctype html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                        }
+                    }
+                }
+            }
+        </script>
+        <!-- google font latto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+        <style>
+            .font-latto{
+                font-family: 'Lato', sans-serif;
+            }
+        </style>
+    </head>
+
+<body class="font-latto">
+    <header class="container px-4 mx-auto mt-8">
+        <nav>
+            <div class="flex items-center p-9 navbar bg-base-100 border rounded-full bg-[#F85559] h-24">
+                <div class="flex-1 flex text-white gap-7 font-medium">
+                    <li class="list-none"><a href="">Home</a></li>
+                    <li class="list-none"><a href="">About Us</a></li>
+                    <li class="list-none"><a href=""></a>Shop</li>
+                    <li class="list-none"><a href=""></a>All fruits</li>
+                </div>
+                <div class="flex-1 flex items-center gap-3">
+                     <div>
+                        <img src="images/logo.png" alt="">    
+                     </div>
+                         <h3 class="text-3xl text-white font-bold">Fruit Brust</h3>
+                     <div>
+                     </div>
+                </div>
+                <div class="flex items-center justify-center h-screen">
+                    <div class="flex items-center justify-center h-screen">
+                        <div class="relative">
+                            <input type="text" placeholder="Search"
+                                class="w-72 h-10 pl-4 pr-10 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-5.2-5.2"></path>
+                                    <circle cx="10" cy="10" r="7"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
+</html>
+</head>
+
+<body>
+
+</body>
+
 </html>
