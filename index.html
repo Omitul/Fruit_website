@@ -21,7 +21,10 @@
                     extend: {
                         colors: {
                             clifford: '#da373d',
-                        }
+                        },
+                        // backgroundImage : {
+                        //     'our-bg':"url('./')",
+                        // },
                     }
                 }
             }
@@ -38,14 +41,14 @@
     </head>
 
 <body class="font-latto">
-    <header class="container px-4 mx-auto mt-8">
+    <header class="container px-10 mx-auto mt-8">
         <nav>
             <div class="flex items-center p-9 navbar bg-base-100 border rounded-full bg-[#F85559] h-24">
                 <div class="flex-1 flex text-white gap-7 font-medium">
                     <li class="list-none"><a href="">Home</a></li>
                     <li class="list-none"><a href="">About Us</a></li>
-                    <li class="list-none"><a href=""></a>Shop</li>
-                    <li class="list-none"><a href=""></a>All fruits</li>
+                    <li class="list-none"><a href="">Shop</a></li>
+                    <li class="list-none"><a href="">All fruits</a> </li>   
                 </div>
                 <div class="flex-1 flex items-center gap-3">
                      <div>
@@ -74,6 +77,17 @@
             </div>
             </div>
         </nav>
+        <!-- section shop now -->
+        <div class="hero min-h-screen  flex flex-col justify-center items-center mt-10" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(./images/banner1.png);background-repeat: no-repeat; background-size: 100%100%;">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="mb-72 max-w-md">
+                <h1 class="mb-5 text-5xl  text-white font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5 text-white font-medium">PWe supply highly quality organic products</p>
+                <button class="btn btn-primary bg-[#F85559] h-10 w-44 text-white font-extrabold rounded-lg">Shop Now</button>
+              </div>
+            </div>
+          </div>
     </header>
 
 
