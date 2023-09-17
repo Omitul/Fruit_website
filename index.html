@@ -42,7 +42,7 @@
 
 <body class="font-latto">
     <header class="container px-10 mx-auto mt-8">
-        <nav>
+        <nav class="hidden md:block lg:block">
             <div class="flex items-center p-9 navbar bg-base-100 border rounded-full bg-[#F85559] h-24">
                 <div class="flex-1 flex text-white gap-7 font-medium">
                     <li class="list-none"><a href="">Home</a></li>
@@ -78,7 +78,8 @@
             </div>
         </nav>
         <!-- section shop now -->
-        <div class="hero min-h-screen  flex flex-col justify-center items-center mt-10" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(./images/banner1.png);background-repeat: no-repeat; background-size: 100%100%;">
+        <section>
+        <div class="min-h-screen  flex flex-col justify-center items-center mt-10" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(./images/banner1.png);background-repeat: no-repeat; background-size: cover;">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="mb-72 max-w-md">
@@ -88,8 +89,33 @@
               </div>
             </div>
           </div>
+        </section>
+        <!-- section part of this -->
+        <section class="section-to-hide hidden md:block max-w-7xl mx-auto -mt-40">
+            <div class="flex items-center justify-around border bounded bg-white h-72 rounded-lg">
+              <div class="flex flex-col items-center">
+                 <img src="/images/fruit5.png" alt="">
+                 <p class="text-[#121212] font-medium">Berry</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="/images/fruit2.png" alt="">
+                <p class="text-[#121212] font-medium">Orange</p>
+             </div>
+             <div class="flex flex-col items-center"> 
+                <img src="/images/fruit3.png" alt="">
+                <p class="text-[#121212] font-medium">Mango</p>
+             </div>
+             <div class="flex flex-col items-center">
+                <img src="/images/fruit4.png" alt="">
+                <p class="text-[#121212] font-medium">Strawberry</p>
+             </div>
+             <div class="flex flex-col items-center">
+                <img src="/images/fruit9.png" alt="">
+                <p class="text-[#121212] font-medium">Banana</p>
+             </div>
+            </div>
+        </section>
     </header>
-
 
     <main>
 
