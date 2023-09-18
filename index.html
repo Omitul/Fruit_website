@@ -34,29 +34,30 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
         <style>
-            .font-latto{
+            .font-latto {
                 font-family: 'Lato', sans-serif;
             }
         </style>
     </head>
 
 <body class="font-latto">
-    <header class="container px-10 mx-auto mt-8">
+    <header class="container px-5 lg:px-10 mx-auto mt-8">
+        <!-- for large and medium device -->
         <nav class="hidden md:block lg:block">
             <div class="flex items-center p-9 navbar bg-base-100 border rounded-full bg-[#F85559] h-24">
                 <div class="flex-1 flex text-white gap-7 font-medium">
                     <li class="list-none"><a href="">Home</a></li>
                     <li class="list-none"><a href="">About Us</a></li>
                     <li class="list-none"><a href="">Shop</a></li>
-                    <li class="list-none"><a href="">All fruits</a> </li>   
+                    <li class="list-none"><a href="">All fruits</a> </li>
                 </div>
                 <div class="flex-1 flex items-center gap-3">
-                     <div>
-                        <img src="images/logo.png" alt="">    
-                     </div>
-                         <h3 class="text-3xl text-white font-bold">Fruit Brust</h3>
-                     <div>
-                     </div>
+                    <div>
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <h3 class="text-3xl text-white font-bold">Fruit Brust</h3>
+                    <div>
+                    </div>
                 </div>
                 <div class="flex items-center justify-center h-screen">
                     <div class="flex items-center justify-center h-screen">
@@ -77,47 +78,124 @@
             </div>
             </div>
         </nav>
+        <!-- for small device -->
+        <nav class="md:hidden lg:hidden block">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-1">
+                    <img class="h-10 w-10" src="images/logo.png" alt="">
+                    <h4 class="text-2xl font-bold">Fruit Brust</h4>
+                </div>
+                <div class="navbar bg-base-100">
+                    <div class="flex-none">
+                        <button class="btn btn-square btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 h-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
         <!-- section shop now -->
         <section>
-        <div class="min-h-screen  flex flex-col justify-center items-center mt-10" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(./images/banner1.png);background-repeat: no-repeat; background-size: cover;">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
-              <div class="mb-72 max-w-md">
-                <h1 class="mb-5 text-5xl  text-white font-extrabold">Exotic tastes at your <br> doorstep</h1>
-                <p class="mb-5 text-white font-medium">PWe supply highly quality organic products</p>
-                <button class="btn btn-primary bg-[#F85559] h-10 w-44 text-white font-extrabold rounded-lg">Shop Now</button>
-              </div>
+            <div class="min-h-screen  flex flex-col justify-center items-center mt-10"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(./images/banner1.png);background-repeat: no-repeat; background-size: cover;">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="mb-72 max-w-md">
+                        <h1 class="mb-5 text-5xl  text-white font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="mb-5 text-white font-medium">PWe supply highly quality organic products</p>
+                        <button class="btn btn-primary bg-[#F85559] h-10 w-44 text-white font-extrabold rounded-lg">Shop
+                            Now</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </section>
         <!-- section part of this -->
         <section class="section-to-hide hidden md:block max-w-7xl mx-auto -mt-40">
             <div class="flex items-center justify-around border bounded bg-white h-72 rounded-lg">
-              <div class="flex flex-col items-center">
-                 <img src="/images/fruit5.png" alt="">
-                 <p class="text-[#121212] font-medium">Berry</p>
-              </div>
-              <div class="flex flex-col items-center">
-                <img src="/images/fruit2.png" alt="">
-                <p class="text-[#121212] font-medium">Orange</p>
-             </div>
-             <div class="flex flex-col items-center"> 
-                <img src="/images/fruit3.png" alt="">
-                <p class="text-[#121212] font-medium">Mango</p>
-             </div>
-             <div class="flex flex-col items-center">
-                <img src="/images/fruit4.png" alt="">
-                <p class="text-[#121212] font-medium">Strawberry</p>
-             </div>
-             <div class="flex flex-col items-center">
-                <img src="/images/fruit9.png" alt="">
-                <p class="text-[#121212] font-medium">Banana</p>
-             </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/fruit5.png" alt="">
+                    <p class="text-[#121212] font-medium">Berry</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/fruit2.png" alt="">
+                    <p class="text-[#121212] font-medium">Orange</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/fruit3.png" alt="">
+                    <p class="text-[#121212] font-medium">Mango</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/fruit4.png" alt="">
+                    <p class="text-[#121212] font-medium">Strawberry</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/fruit9.png" alt="">
+                    <p class="text-[#121212] font-medium">Banana</p>
+                </div>
             </div>
         </section>
     </header>
 
     <main>
+        <!-- deal of the day section -->
+        <section class="container px-5 lg:px-10 mx-auto mt-8">
+            <div class="flex">
+                <div>
+                    <h3 class="text-4xl font-bold">Deal of the day</h3>
+                    <p class="font-medium text-gray-600">Contrary to popular belief, is not simply random text. It has
+                        roots
+                        in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex justify-between gap-3">
+                    <!-- days -->
+                    <div class="flex gap-3 items-center">
+                        <div class="text-center">
+                            <div class="text-2xl font-extrabold">29</div>
+                            <div class="text-sm text-gray-500">Days</div>
+                        </div>
+                        <div>
+                            <img class="h-5 w-5" src="images/Frame (1).svg" alt="">
+                        </div>
+                    </div>
+                    <!-- hours -->
+                    <div class="flex gap-3 items-center">
+                        <div class="text-center">
+                            <div class="text-2xl font-extrabold">15</div>
+                            <div class="text-sm text-gray-500">Hours</div>
+                        </div>
+                        <div>
+                            <img class="h-5 w-5" src="images/Frame (1).svg" alt="">
+                        </div>
+                    </div>
+                    <!-- minutes -->
+                    <div class="flex gap-3 items-center">
+                        <div class="text-center">
+                            <div class="text-2xl font-extrabold">25</div>
+                            <div class="text-sm text-gray-500">Minutes</div>
+                        </div>
+                        <div>
+                            <img class="h-5 w-5" src="images/Frame (1).svg" alt="">
+                        </div>
+                    </div>
+                    <!-- seconds -->
+                    <div class="flex gap-3 items-center">
+                        <div class="text-center">
+                            <div class="text-2xl font-extrabold">08</div>
+                            <div class="text-sm text-gray-500">Seconds</div>
+                        </div>
+                        <!-- <div>
+                            <img class="h-5 w-5" src="images/Frame (1).svg" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
